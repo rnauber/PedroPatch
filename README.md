@@ -3,7 +3,7 @@
 
 ![Example of the on board camera view.](teaser.gif)
 
-PedroPatch is a kernel driver module for the LG HomBot/Roboking VR6260 that allow to access the camera of the device.
+PedroPatch is a kernel driver module for the LG HomBot/Roboking VR6260 that allows to access the camera of this device.
 (Its name stems from the fact that our robot friend is called "Pedro" because of his Spanish origins. And a patch is a small modification to a piece of software.)
 
 ## Using it
@@ -48,10 +48,11 @@ A very interesting  thread (German only) about the modifying the HomBot is [here
 ### Preparations
 
 First you need to get:
-    * the kernel sources from LG: VR6XXX_OpenSource_v1.3.1.zip 
-    * a gcc toolchain for arm
 
-    HOST$ sudo apt-get install gcc-4.9-arm-linux-gnueabi
+ * the kernel sources from LG: [VR6XXX_OpenSource_v1.3.1.zip](http://opensource.lge.com/osSch/list?types=ALL&search=VR6260LV) 
+ * a gcc toolchain for arm 
+
+    HOST$ sudo apt-get install gcc-4.9-arm-linux-gnueabi build-essential
 
 Then edit the file kernel-2.6.33/arch/arm/mach-nxp2120/include/mach/soc.h:
 
